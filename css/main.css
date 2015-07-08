@@ -94,6 +94,64 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+header nav div {
+    margin-top: 3px;
+    display: inline-block;
+    float: left;
+    width: 5%;
+}
+
+header nav div span {
+    border: black solid 2px;
+    margin: 3px;
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 95%;
+}
+
+header nav ul li {
+    float: left;
+    text-align: center;
+    width: 33.33%;
+    height: 2em;
+}
+
+aside {
+height: 500px;
+width: 25%;
+background-color: rgba(220,220,220,.5);
+}
+
+#lione {
+    background-color: rgb(100, 220, 75);
+}
+
+#litwo {
+    background-color: rgb(60, 195, 65);
+
+}
+
+#lithree {
+    background-color: rgb(20, 170, 50)
+
+}
+
+
 
 
 
