@@ -39,6 +39,9 @@
 	// When hovering over the side menu icon
 		// Slide side menu onto screen from left side.
 
+$('#vertlines').on('click', function(){
+	$('aside').toggleClass('open');
+})
 
 
 
