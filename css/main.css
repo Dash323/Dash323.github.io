@@ -212,18 +212,23 @@ transition-timing-function: ease-in-out;
     background-color: black;
 }
 
-.sectionimages {
+.sectionimages div {
     width: 100%;
     position: relative;
     z-index: 40;
     background-color: black;
 }
 
+/*#carousel {
+    width: 10%;
+    margin: 10px;
+}*/
+
 #guardiancolor {
     font-family: 'UnifrakturCook', cursive;
     background-color: rgb(255, 186, 66);
     font-size: 4em;
-    margin: 0 0 0 0;
+    margin: 0 10%;
     text-align: center;
     color: black; 
 }
@@ -246,20 +251,26 @@ transition-timing-function: ease-in-out;
     color: black; 
 }
 
-.sectionimages > img {
+.sectionimages {
     display: block;
-    width: 50%;
+    width: 100%;
     position: relative;
     margin: 0px auto;
     z-index: 40;
+    padding-top: 10px;
+}
 
+.sectionimages div img {
+    width: 50%;
+    display: block;
+    margin: 0px auto;
+    padding-top: 10px;
 }
 
 
 
 
-
-
+footer{}
 
 
 

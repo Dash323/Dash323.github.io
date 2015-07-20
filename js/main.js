@@ -39,6 +39,15 @@
 	// When hovering over the side menu icon
 		// Slide side menu onto screen from left side.
 
+var images = ['img/guardians/agandaur.jpg','img/guardians/frodo.jpg','img/guardians/gandalf.jpg','img/guardians/gloin.jpg','img/guardians/legolas.jpg','img/guardians/ori.jpg','img/guardians/sauron.jpg','img/guardians/thrane.jpg','img/guardians/wulfrun.jpg'];
+
+//Array with likes
+var likes = [0,0,0,0,0,0,0,0,0];
+
+//Current position (index)
+var index = 0;
+
+
 
 
 //Sidebar lines
@@ -63,6 +72,18 @@ $('nav ul li a').on('click', function(e) {
   }, 1000);
 });
 
+
+
+
+// $('#next').on('click', function(){
+// 	index = (index + 1);
+// 	$('#prev').prop('disabled', false);
+// 	$('#guardiansimg').prop('src', images[index]);
+// 	if(index === images.length-1) {
+// 		$('#next').prop('disabled', true);
+// 	}
+// 	$('#votes').html('Likes: ' + likes[index])
+// })
 
 
 
