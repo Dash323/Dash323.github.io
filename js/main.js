@@ -39,13 +39,25 @@
 	// When hovering over the side menu icon
 		// Slide side menu onto screen from left side.
 
-var images = ['img/guardians/agandaur.jpg','img/guardians/frodo.jpg','img/guardians/gandalf.jpg','img/guardians/gloin.jpg','img/guardians/legolas.jpg','img/guardians/ori.jpg','img/guardians/sauron.jpg','img/guardians/thrane.jpg','img/guardians/wulfrun.jpg'];
+var guardiansImages = ['img/guardians/agandaur.jpg','img/guardians/frodo.png','img/guardians/gandalf.jpg','img/guardians/gloin.jpg','img/guardians/legolas.jpg','img/guardians/ori.jpg','img/guardians/sauron.jpg','img/guardians/thrane.jpg','img/guardians/wulfrun.jpg'];
+
+var loadoutsImages = ['img/loadouts/loadout1.jpg','img/loadouts/loadout2.png','img/loadouts/loadout3.jpg','img/loadouts/loadout4.jpg'];
+
+var strategiesImages = ['img/guardians/agandaur.jpg','img/guardians/frodo.jpg','img/guardians/gandalf.jpg','img/guardians/gloin.jpg','img/guardians/legolas.jpg','img/guardians/ori.jpg','img/guardians/sauron.jpg','img/guardians/thrane.jpg','img/guardians/wulfrun.jpg'];
 
 //Array with likes
-var likes = [0,0,0,0,0,0,0,0,0];
+var guardiansLikes = [0,0,0,0,0,0,0,0,0];
+
+var loadoutsLikes = [0,0,0,0];
+
+var strategiesLikes = [0,0,0,0,0,0,0,0,0];
 
 //Current position (index)
-var index = 0;
+var guardiansIndex = 0;
+
+var loadoutsIndex = 0;
+
+var strategiesIndex = 0;
 
 
 
@@ -69,21 +81,81 @@ $('nav ul li a').on('click', function(e) {
   var targetOffset = $(thisTarget).offset().top;
   $('body').animate({
     scrollTop: targetOffset - 32
-  }, 1000);
+  }, targetOffset);
 });
 
 
 
 
-// $('#next').on('click', function(){
-// 	index = (index + 1);
-// 	$('#prev').prop('disabled', false);
-// 	$('#guardiansimg').prop('src', images[index]);
-// 	if(index === images.length-1) {
-// 		$('#next').prop('disabled', true);
-// 	}
-// 	$('#votes').html('Likes: ' + likes[index])
-// })
+//GUARDIANS
+
+$('#gnext').on('click', function(){
+	guardiansIndex = (guardiansIndex + 1);
+	$('#gprevious').prop('disabled', false);
+	$('#displayedgimage').prop('src', guardiansImages[guardiansIndex]);
+	if(guardiansIndex === guardiansImages.length-1) {
+		$('#gnext').prop('disabled', true);
+	}
+	// $('#votes').html('Likes: ' + likes[index])
+})
+
+$('#gprevious').on('click', function(){
+	guardiansIndex = (guardiansIndex - 1);
+	$('#gnext').prop('disabled', false);
+	$('#displayedgimage').prop('src', guardiansImages[guardiansIndex]);
+	if(guardiansIndex === 0) {
+		$('#gprevious').prop('disabled', true);
+	}
+	// $('#votes').html('Likes: ' + likes[index])
+});
+
+
+
+//LOADOUTS
+
+$('#lnext').on('click', function(){
+	loadoutsIndex = (loadoutsIndex + 1);
+	$('#lprevious').prop('disabled', false);
+	$('#displayedlimage').prop('src', loadoutsImages[loadoutsIndex]);
+	if(loadoutsIndex === loadoutsImages.length-1) {
+		$('#lnext').prop('disabled', true);
+	}
+	// $('#votes').html('Likes: ' + likes[index])
+})
+
+$('#lprevious').on('click', function(){
+	loadoutsIndex = (loadoutsIndex - 1);
+	$('#lnext').prop('disabled', false);
+	$('#displayedlimage').prop('src', loadoutsImages[loadoutsIndex]);
+	if(loadoutsIndex === 0) {
+		$('#lprevious').prop('disabled', true);
+	}
+	// $('#votes').html('Likes: ' + likes[index])
+});
+
+
+
+//STRATEGIES
+
+$('#snext').on('click', function(){
+	strategiesIndex = (strategiesIndex + 1);
+	$('#lprevious').prop('disabled', false);
+	$('#displayedsimage').prop('src', strategiesImages[strategiesIndex]);
+	if(strategiesIndex === strategiesImages.length-1) {
+		$('#snext').prop('disabled', true);
+	}
+	// $('#votes').html('Likes: ' + likes[index])
+})
+
+$('#sprevious').on('click', function(){
+	strategiesIndex = (strategiesIndex - 1);
+	$('#snext').prop('disabled', false);
+	$('#displayedsimage').prop('src', strategiesImages[strategiesIndex]);
+	if(strategiesIndex === 0) {
+		$('#sprevious').prop('disabled', true);
+	}
+	// $('#votes').html('Likes: ' + likes[index])
+});
 
 
 
