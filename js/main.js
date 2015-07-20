@@ -41,8 +41,13 @@
 
 $('#vertlines').on('click', function(){
 	$('aside').toggleClass('open');
-})
+});
 
+$(window).on('scroll', function(){
+	var scrolled = $(this).scrollTop();
+		$('#banner').css('top',(-(scrolled*-.4625))+'px');
+		console.log(scrolled);
+	});
 
 
 

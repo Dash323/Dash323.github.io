@@ -113,7 +113,7 @@ header nav div {
 
 header nav div span {
     border: black solid 2px;
-    margin: 3px;
+    margin: 5px 3px;
 }
 
 
@@ -147,11 +147,42 @@ transition-duration: .4s;
 transition-timing-function: ease-in-out;
 }
 
-#banner {
-    width: 100%;
+#vertlines {
+    position: relative;
+    background-color: green;
+    height: 32px;
+    margin: 0 0 0 0;
 }
-.sectionimgages {
+
+#banner {
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+}
+
+#bannerbackground {
+    position: relative;
+    top: 32px;
+    background-color: black;
+}
+
+#vertplacement{
+    
+}
+
+
+/*div section {
     width: 100%;
+    background-image: url("");
+
+}*/
+.sectionimages {
+    width: 100%;
+    position: relative;
+    z-index: 50;
 }
 
 .open {
@@ -173,9 +204,8 @@ transition-timing-function: ease-in-out;
 }
 
 
-div section {
-    width: 100%;
-}
+
+
 
 
 
