@@ -156,7 +156,28 @@ header nav ul li {
     text-align: center;
     width: 33.33%;
     height: 2em;
-    padding-top: 4px;
+    padding-top: 0px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 1.5em;
+
+    }
+
+#liguardianscolor {
+    background-color: rgb(255, 186, 66);
+}
+
+#liloadoutscolor {
+    background-color: rgb(60, 195, 65);
+
+}
+
+#listrategycolor {
+    background-color: rgb(0, 159, 231);
 }
 
 aside {
@@ -171,6 +192,9 @@ transition-duration: .4s;
 transition-timing-function: ease-in-out;
 }
 
+.open {
+    transform: translateX(0);
+}
 
 
 #banner {
@@ -188,39 +212,50 @@ transition-timing-function: ease-in-out;
     background-color: black;
 }
 
-#vertplacement{
-    
-}
-
-
-/*div section {
-    width: 100%;
-    background-image: url("");
-
-}*/
 .sectionimages {
     width: 100%;
     position: relative;
-    z-index: 50;
+    z-index: 40;
+    background-color: black;
 }
 
-.open {
-    transform: translateX(0);
+#guardiancolor {
+    font-family: 'UnifrakturCook', cursive;
+    background-color: rgb(255, 186, 66);
+    font-size: 4em;
+    margin: 0 0 0 0;
+    text-align: center;
+    color: black; 
 }
 
-#liguardians {
-    background-color: rgb(100, 220, 75);
-}
-
-#litwo {
+#loadoutcolor {
+    font-family: 'UnifrakturCook', cursive;
     background-color: rgb(60, 195, 65);
+    font-size: 4em;
+    margin: 0 0 0 0;
+    text-align: center;
+    color: black; 
+}
+
+#strategycolor {
+    font-family: 'UnifrakturCook', cursive;
+    background-color: rgb(0, 159, 231);
+    font-size: 4em;
+    margin: 0 0 0 0;
+    text-align: center;
+    color: black; 
+}
+
+.sectionimages > img {
+    display: block;
+    width: 50%;
+    position: relative;
+    margin: 0px auto;
+    z-index: 40;
 
 }
 
-#lithree {
-    background-color: rgb(20, 170, 50)
 
-}
 
 
 
